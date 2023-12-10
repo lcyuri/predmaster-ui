@@ -18,7 +18,7 @@ const App: React.FC = () => {
   const [alarms, setAlarms] = useState<Alarm[]>([]);
   const [previsions, setPrevisions] = useState<Prevision[]>([]);
   const [settings, setSettings] = useState<Settings[]>([]);
-  const [currentPage, setCurrentPage] = useState<Pages>('');
+  const [currentPage, setCurrentPage] = useState<Pages>('/login');
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -26,10 +26,10 @@ const App: React.FC = () => {
       try {
         if (user?.username) {
           const clientId = user.username;
-  
+
           const alarmData = await getAlarm(clientId);
           setAlarms(alarmData);
-    
+
           const previsionData = await getPrevision(clientId);
           setPrevisions(previsionData);
     
@@ -37,8 +37,6 @@ const App: React.FC = () => {
           setSettings(settingsData);
 
           setCurrentPage('/prevision');
-        } else {
-          throw new Error('Usuário não encontrado');
         }
       } catch (error) {
         console.error('fetchData -', error);
@@ -56,7 +54,7 @@ const App: React.FC = () => {
     <div className='app'>
       <Header clientName={user?.company} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
       <Routes>
-        <Route path='/' element={<Login setUser={setUser} />} />
+        <Route path='/login' element={<Login setUser={setUser} />} />
         <Route
           path='/prevision'
           element={<Main currentPage='/prevision' alarms={alarms} previsions={previsions} settings={settings} />}

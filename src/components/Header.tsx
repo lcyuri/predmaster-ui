@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavDropdown } from 'react-bootstrap';
 import { HeaderProps } from '../models/components';
+import logo from '../assets/img/logo.png';
 
 const Header: React.FC<HeaderProps> = ({clientName, currentPage, setCurrentPage}) => {
   const getTitle = (): string => {
@@ -23,9 +24,9 @@ const Header: React.FC<HeaderProps> = ({clientName, currentPage, setCurrentPage}
   return (
     <nav className='navbar navbar-expand-lg navbar-light bg-light border-bottom'>
       <div className='container-lg'>
-        <a className='navbar-brand d-flex align-items-center' href='/'>
+        <a className='navbar-brand d-flex align-items-center' href='/login'>
           <img
-            src='/logo.png'
+            src={logo}
             width='40'
             height='34'
             className='d-inline-block align-top me-2'

@@ -2,7 +2,7 @@ import { Alarm } from './alarm';
 import { Prevision } from './prevision';
 import { Settings } from './settings';
 
-export type Pages = '/prevision' | '/settings' | '/alarm' | '/history' | '';
+export type Pages = '/prevision' | '/settings' | '/alarm' | '/history' | '/login';
 
 export interface HeaderProps {
   clientName?: string;

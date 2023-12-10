@@ -3,6 +3,7 @@ import { getUser } from '../services/userService';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { LoginProps } from '../models/components';
 import { FormControl, InputGroup } from 'react-bootstrap';
+import logo from '../assets/img/logo.png';
 
 const Login: React.FC<LoginProps> = ({ setUser }) => {
   const [username, setUsername] = useState<string>('');
@@ -47,7 +48,7 @@ const Login: React.FC<LoginProps> = ({ setUser }) => {
             <div className='card-body'>
               <div className='text-center mb-3'>
                 <img
-                  src='/logo.png'
+                  src={logo}
                   width='159'
                   height='144'
                   alt=''
