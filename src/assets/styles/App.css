@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.custom-pagination .page-link {
+  color: #000000; /* Black text color */
+}
+
+.custom-pagination .active .page-link {
+  background-color: #BFBFBF;
+  border-color: #BFBFBF;
+}
+
+
