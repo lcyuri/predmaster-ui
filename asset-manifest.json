@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/predmaster-ui/static/css/main.f313b16d.chunk.css",
+    "main.js": "/predmaster-ui/static/js/main.0a50a580.chunk.js",
+    "main.js.map": "/predmaster-ui/static/js/main.0a50a580.chunk.js.map",
+    "runtime-main.js": "/predmaster-ui/static/js/runtime-main.ea3831ac.js",
+    "runtime-main.js.map": "/predmaster-ui/static/js/runtime-main.ea3831ac.js.map",
+    "static/css/2.66772492.chunk.css": "/predmaster-ui/static/css/2.66772492.chunk.css",
+    "static/js/2.2f38dea3.chunk.js": "/predmaster-ui/static/js/2.2f38dea3.chunk.js",
+    "static/js/2.2f38dea3.chunk.js.map": "/predmaster-ui/static/js/2.2f38dea3.chunk.js.map",
+    "index.html": "/predmaster-ui/index.html",
+    "static/css/2.66772492.chunk.css.map": "/predmaster-ui/static/css/2.66772492.chunk.css.map",
+    "static/css/main.f313b16d.chunk.css.map": "/predmaster-ui/static/css/main.f313b16d.chunk.css.map",
+    "static/js/2.2f38dea3.chunk.js.LICENSE.txt": "/predmaster-ui/static/js/2.2f38dea3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ea3831ac.js",
+    "static/css/2.66772492.chunk.css",
+    "static/js/2.2f38dea3.chunk.js",
+    "static/css/main.f313b16d.chunk.css",
+    "static/js/main.0a50a580.chunk.js"
+  ]
+}
